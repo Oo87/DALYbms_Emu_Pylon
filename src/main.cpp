@@ -23,8 +23,8 @@
 
              
 #define ONBOARD_LED_BLUE        GPIO_NUM_2 //2
-#define CAN_TX_GPIO             GPIO_NUM_23  
-#define CAN_RX_GPIO             GPIO_NUM_22  
+#define CAN_TX_GPIO             GPIO_NUM_5  
+#define CAN_RX_GPIO             GPIO_NUM_4  
 
 #define VERSION                 "2022_12_16_versionV1.0"
 
@@ -128,7 +128,7 @@ void setupCanbus(){
 
 
 void setupModbus(){
-  IPAddress ip = {192, 168, 0, 190};          // IP address of modbus server
+  IPAddress ip = {192, 168, 5, 213};          // IP address of modbus server
   uint16_t port = 502;                      // port of modbus server
   // Create a ModbusTCP client instance
   ModbusClientTCPasync MB(ip, port);

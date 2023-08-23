@@ -6,6 +6,9 @@ extern JK_bms_battery_info jk_bms_battery_info;
 
 void configuracionInicial(){
     
+    configuracion.ssid1="Oo";
+    configuracion.pass1="19871989";
+
     configuracion.wifiConfigured=false;
     configuracion.dispositivoCAN=false;
     configuracion.comunicarJKrs485=false;
